@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'BricolageGrotesque-Medium';
+  src: url('../assets/BricolageGrotesque-Medium.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BricolageGrotesque-Bold';
+  src: url('../assets/BricolageGrotesque-Bold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+.otp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.otp-modal {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.otp-modal h2 {
+  font-family: 'BricolageGrotesque-Medium', sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #060606;
+}
+
+.otp-modal p {
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 14px;
+  color: #8A8B8C;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #F5F6FA;
+  border: 1px solid #D5D5D5;
+  font-size: 18px;
+  color: #A6A6A6;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.otp-submit {
+  background-color: #BE0000;
+  color: white;
+  padding: 0.75rem 3rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+}
+
+.otp-submit:hover {
+  background-color: #df4545;
+}
+
+@media (max-width: 768px) {
+  .otp-modal {
+    padding: 2rem;
+  }
+
+  .otp-modal h2 {
+    font-size: 18px;
+  }
+
+  .otp-modal p {
+    font-size: 13px;
+  }
+
+  .otp-submit {
+    padding: 0.6rem 2rem;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'BricolageGrotesque-Medium';
+    src: url('../assets/BricolageGrotesque-Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BricolageGrotesque-Bold';
+    src: url('../assets/BricolageGrotesque-Bold.ttf') format('truetype');
+    font-weight: normal;
+}
+
+.fileupload-container {
+  display: flex;
+  height: 350px;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.fileupload-dropzone {
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 14px;
+  flex-shrink: 0;            
+  width: 300px; 
+  height: 300px;
+  background-color: #e6e8eb;
+  border: 2px #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 0;
+}
+
+.fileupload-dropzone img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.fileupload-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #F94200;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.fileupload-button:hover {
+  background-color: #df4545;
+}
+
+.fileupload-list {
+  flex: 2;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  max-height: 300px; 
+  overflow-y: auto;
+  min-width: 300px;
+}
+
+.fileupload-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.fileupload-li {
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 14px;
+  color: black;
+  border: 1px solid #ccc;
+  margin-bottom: 0.75rem;
+  font-size: 16px;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .fileupload-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .fileupload-dropzone {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .fileupload-list {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    height: auto;
+  }
+}
+

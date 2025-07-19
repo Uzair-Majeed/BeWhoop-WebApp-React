@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'BricolageGrotesque-Medium';
+  src: url('../assets/BricolageGrotesque-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NunitoSans';
+  src: url('../assets/NunitoSans.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BricolageGrotesque-Bold';
+  src: url('../assets/BricolageGrotesque-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DM-Sans';
+  src: url('../assets/DM-Sans.ttf') format('truetype');
+}
+
+.tickets-label1,
+.tickets-label2 {
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 18px;
+  color: #060606;
+  margin-bottom: 5px;
+}
+
+
+.tickets-box {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tickets-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tickets-plus-icon {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f94200;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #818181;
+}
+.tickets-select-input,
+.tickets-simple-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  font-family: 'DM-Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.tickets-ticket-fields {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tickets-add-ticket-button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: #BE0000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+}
+
+.tickets-ticket-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffe6e6;
+  border: 1px solid #f5c2c7;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-top: 15px !important;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+}
+
+.tickets-ticket-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
+}
+
+.tickets-ticket-detail {
+  margin-right: 1rem;
+  font-size: 16px;
+}
+
+.tickets-ticket-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.tickets-ticket-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .tickets-form-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .tickets-price-range {
+    flex-direction: column;
+  }
+
+  .tickets-input-range {
+    width: 100%;
+  }
+}

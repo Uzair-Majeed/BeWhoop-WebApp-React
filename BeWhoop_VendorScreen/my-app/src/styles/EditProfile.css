@@ -1,0 +1,353 @@
+@font-face {
+  font-family: 'BricolageGrotesque-Medium';
+  src: url('../assets/BricolageGrotesque-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NunitoSans';
+  src: url('../assets/NunitoSans.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BricolageGrotesque-Bold';
+  src: url('../assets/BricolageGrotesque-Bold.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared layout */
+.editprofile-dashboard-container,
+.editservices-dashboard-container,
+.editportfolio-dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+}
+
+.editprofile-main-content,
+.editservices-main-content,
+.editportfolio-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.editservices-scrollable {
+  overflow-y: auto;
+  padding: 20px;
+  height: calc(100vh - 80px);
+  width: 100%;
+  position: relative; /* Enable absolute positioning inside */
+  
+  padding-bottom: 20px;
+}
+
+.editprofile-scrollable,
+.editportfolio-scrollable {
+  overflow-y: auto;
+  padding: 20px;
+  height: calc(100vh - 80px);
+  width: 100%;
+  position: relative; /* Enable absolute positioning inside */
+  
+  padding-bottom: 20px;
+}
+.editservices-form-wrapper {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+
+.editprofile-form-wrapper {
+  
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+
+.editportfolio-form-wrapper {
+  
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ margin-top:1rem;
+  margin-left: 21rem;
+  margin-right: 40px;
+}
+
+/* Labels */
+.editservices-label1 {
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 24px;
+  color: #060606;
+  margin-bottom: 5px;
+}
+
+.editprofile-label1,
+.editprofile-label2,
+.editprofile-label3,
+.editportfolio-label1,
+.editportfolio-label3 {
+  
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 24px;
+  color: #060606;
+  margin-top: 3rem !important;
+  margin-bottom: 5px;
+}
+/* Upload Circle */
+.editprofile-upload{
+  margin-left: 80px;
+  margin-right: 40px;
+}
+
+.editportfolio-upload {
+  max-width:750px;
+ margin-top:2rem;
+  margin-left: 20rem;
+  margin-right: 40px;
+}
+
+.editprofile-upload-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+/* Inputs */
+.editprofile-description-input {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 18px;
+  color: #333;
+  resize: vertical;
+}
+
+.editservices-text-container {
+  width: 100%;
+  margin-top: 1rem;
+  height: 130px;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #F5F6FA;
+  box-sizing: border-box;
+  color: #A6A6A6;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.editservices-events {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  color: #060606;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #818181;
+}
+.editservices-eventsAdded {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.editservices-event-chip {
+  background-color: #f94200;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.editservices-remove-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.editservices-available-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.editservices-add-chip {
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  color: #8f8f8f;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  cursor: pointer;
+  font-size: 14px;
+}
+.editservices-map-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.editservices-select-input,
+.editservices-simple-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.editportfolio-price-range {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.editportfolio-input-range {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f6fa;
+  border: 1px solid #d5d5d5;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.editservices-save-button-container,
+.editprofile-save-button-container,
+.editportfolio-save-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.editservices-save-button{
+
+  background-color: #BE0000;
+  color: white;
+  padding: 1rem 8rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  margin-top: 2rem;
+  margin-right:4rem;
+}
+.editportfolio-save-button {
+  background-color: #BE0000;
+  color: white;
+  padding: 1rem 8rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  margin-top: 10rem;
+  margin-right:4rem;
+}
+
+.editprofile-save-button {
+  
+  background-color: #BE0000;
+  color: white;
+  padding: 1rem 8rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  margin-top: 10rem;
+  margin-right:4rem;
+}
+.editprofile-save-button:hover,
+.editservices-save-button:hover,
+.editportfolio-save-button:hover {
+  background-color: #d13300;
+}
+
+/* Error */
+.editprofile-error-fields{
+  
+  font-size: 14px;
+  color: red !important;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  margin-left: 4rem !important;
+  margin-top: 2rem;
+}
+.editservices-error-fields{
+  
+  font-size: 14px;
+  color: red !important;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  margin-left: 13rem !important;
+  margin-top: 2rem;
+}
+.editportfolio-error-fields {
+  font-size: 14px;
+  color: red !important;
+  font-family: 'BricolageGrotesque-Bold', sans-serif;
+  margin-left: 15rem !important;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .editprofile-form-wrapper,
+  .editservices-form-wrapper,
+  .editportfolio-form-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .editportfolio-price-range {
+    flex-direction: column;
+  }
+
+  .editportfolio-input-range {
+    width: 100%;
+  }
+}
