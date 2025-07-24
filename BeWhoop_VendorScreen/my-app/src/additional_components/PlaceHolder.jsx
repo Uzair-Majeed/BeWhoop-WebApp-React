@@ -1,5 +1,5 @@
 import React from 'react';
-import './Placeholder.css';
+import './PlaceHolder.css';
 import Sidebar from './Sidebar';
 import Header from './Header';
 
